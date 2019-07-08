@@ -6,7 +6,7 @@ PlayEverywhere is a Google Play Music downloader. It can download uploaded songs
 
 ## TOU
 
-By using PlayEverywhere you agree that me (theLMGN) or any other contributors are liable for damage of loss of property, goods, data, or any negative impacts you may face by using PlayAnywhere.
+By using PlayEverywhere you agree that me (theLMGN) or any other contributors are **not** liable for damage of loss of property, goods, data, or any negative impacts you may face by using PlayAnywhere.
 
 You also agree that you will not use PlayEverywhere for piracy, or any other illegal activities in your juristiction or the UK.
 
