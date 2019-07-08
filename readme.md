@@ -1,6 +1,6 @@
 # PlayEverywhere
 
-![Logo](ui/img/logo.svg)
+<img src="ui/img/logo.svg" height="350" alt="PlayEverywhere logo">
 
 PlayEverywhere is a Google Play Music downloader. It can download uploaded songs, bought songs, and subscription songs.
 
