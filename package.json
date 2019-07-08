@@ -1,0 +1,33 @@
+{
+  "name": "playeverywhere",
+  "version": "1.0.0",
+  "description": "Google Play Music downloader",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelmgn/play.git"
+  },
+  "keywords": [
+    "GooglePlay",
+    "GMusic",
+    "Google",
+    "Play",
+    "Music"
+  ],
+  "author": "theLMGN",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/thelmgn/playeverywhere/issues"
+  },
+  "homepage": "https://github.com/thelmgn/playeverywhere#readme",
+  "dependencies": {
+    "electron": "^5.0.6",
+    "node-fetch": "^2.6.0",
+    "node-id3": "^0.1.7",
+    "playmusic": "^2.3.0",
+    "sanitize-filename": "^1.6.1"
+  },
+  "devDependencies": {
+    "electron-winstaller": "^3.0.4"
+  }
+}

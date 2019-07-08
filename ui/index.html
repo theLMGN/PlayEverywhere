@@ -1,0 +1,99 @@
+
+<!-- Welcome to PlayEverywhere! o/
+    
+    +o/-`                                   
+    ooooo+:.                                
+    ooooooooo/-`                            
+    oooooooooooo+:``````                    
+    oooooooo+/::----------..`               
+    oooooo/:------------------.`            
+    oooo/-------:::://:::-------.           
+    ooo:-----::////////////:------`         
+    oo:-----:///:-:://///////------:-`      
+    o+-----:////------:://////-----:oo+:.`  
+    +/-----/////---Play---:///:-----ooooo+/-
+    +/-----/////----------:///:-----ooooo+:.
+    ++-----/////------:://////-----:o+/-``  
+    +o:-----////:-:://///////:----.-.`      
+    +oo:-----://///////////:---.``          
+    +ooo/-------:::////::--..`              
+    +ooooo/:------------.`                  
+    +ooooooo+/:-----.``                     
+    +ooooooooooo+-`                         
+    +oooooooo/-`                            
+    +oooo+:.                                
+    /o/-`                  
+-->
+<html>
+<head>
+    <title>PlayEverywhere - Loading</title>
+    <link rel="stylesheet" href="mdl/material.deep_orange-orange.min.css">
+    <link rel="stylesheet" href="mdl/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <div id="loadingPanel">
+        <div id="container">
+            <div id="loadingSpinner" class="mdl-spinner mdl-sp-inner--single-color mdl-js-spinner is-active"></div>
+            <img id="loadingLogo" src="img/logo.svg" />
+            <div id="loadingBar" class="mdl-progress mdl-js-progress"></div>
+            <div id="login">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="username">
+                    <label class="mdl-textfield__label" for="username">Google account email</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="password" id="password">
+                    <label class="mdl-textfield__label" for="password">Google account password</label>
+                </div><br>
+                <button onclick="performLogin()" class="block center mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                    Login
+                </button>
+                2fa users will need to use an app password generated <a onclick="require('electron').shell.openExternal('https:\/\/myaccount.google.com/apppasswords')">here.</a><br>
+                Your password will not be stored or transmitted to any party other than Google.
+            </div>
+        </div>
+    </div>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">PlayEverywhere</span>
+            </div>
+            <!-- Tabs -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#playlists" class="mdl-layout__tab is-active">Playlists</a>
+                <a href="#search" class="mdl-layout__tab">Search</a>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Settings</span>
+            
+        </div>
+        <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="playlists">
+                <div class="page-content">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                        <thead>
+                            <tr>
+                                <th class="mdl-data-table__cell--non-numeric">Playlist name</th>
+                                <th>Tracks</th>
+                                <th>Last Modified</th>
+                            </tr>
+                        </thead>
+                        <tbody id="plTable">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="search">
+                
+            </section>
+        </main>
+    </div>
+    <script src="mdl/material.min.js"></script>
+    <script src="js/client.js"></script>
+</body>
+</html>
